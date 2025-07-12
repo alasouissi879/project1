@@ -1,0 +1,253 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.mycompany</groupId>
+   <artifactId>GatlingTest</artifactId>
+   <version>2</version>
+   <packaging>jar</packaging>
+ <properties>
+       <maven.compiler.source>24</maven.compiler.source>
+       <maven.compiler.target>24</maven.compiler.target>
+       <scala.version>2.13.13</scala.version>
+   </properties>
+   <profiles>
+   <profile>
+       <id>gatling</id>
+      </profile>
+</profiles>
+   <dependencies>
+   <dependency>
+   <groupId>com.intuit.karate</groupId>
+   <artifactId>karate-gatling</artifactId>
+   <version>1.4.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.gatling/gatling-http -->
+<dependency>
+    <groupId>io.gatling</groupId>
+    <artifactId>gatling-http</artifactId>
+    <version>3.10.5</version>
+</dependency>
+       <dependency>
+           <groupId>org.scalatest</groupId>
+           <artifactId>scalatest_2.11</artifactId>
+           <version>3.0.2</version>
+           <scope>test</scope>
+       </dependency>
+       <dependency>
+           <groupId>org.apache.spark</groupId>
+           <artifactId>spark-sql_2.11</artifactId>
+           <version>2.4.0</version>
+           <scope>provided</scope>
+       </dependency>
+       <dependency>
+           <groupId>com.google.guava</groupId>
+           <artifactId>guava</artifactId>
+           <version>28.1-jre</version>
+       </dependency>
+      
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-api-scala_2.11</artifactId>
+           <version>11.0</version>
+       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.19.1</version>
+</dependency>
+
+
+
+
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-core</artifactId>
+           <version>2.25.0</version>
+       </dependency>
+      <!-- https://mvnrepository.com/artifact/net.alchim31.maven/scala-maven-plugin -->
+<dependency>
+    <groupId>net.alchim31.maven</groupId>
+    <artifactId>scala-maven-plugin</artifactId>
+    <version>3.3.3</version>
+</dependency>
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-api</artifactId>
+           <version>2.25.0</version>
+       </dependency>
+<dependency>
+   <groupId>io.gatling</groupId>
+   <artifactId>gatling-compiler</artifactId>
+   <version>3.10.5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.gatling.highcharts/gatling-charts-highcharts -->
+<dependency>
+   <groupId>io.gatling.highcharts</groupId>
+   <artifactId>gatling-charts-highcharts</artifactId>
+   <version>3.10.5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-core -->
+<dependency>
+   <groupId>com.intuit.karate</groupId>
+   <artifactId>karate-core</artifactId>
+   <version>1.4.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-all</artifactId>
+    <version>4.2.2.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
+<dependency>
+   <groupId>com.intuit.karate</groupId>
+   <artifactId>karate-junit5</artifactId>
+   <version>1.4.1</version>
+   <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.alchim31.maven/scala-maven-plugin -->
+
+<!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-handler</artifactId>
+    <version>4.2.2.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-buffer</artifactId>
+    <version>4.2.2.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.netty/netty-transport -->
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-transport</artifactId>
+    <version>4.2.2.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.netty/netty-common -->
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-common</artifactId>
+    <version>4.2.2.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.17</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-reload4j</artifactId>
+    <version>2.0.17</version>
+    <scope>compile</scope>
+</dependency>
+
+   </dependencies>
+   <build>
+       <plugins>
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>3.5.3</version>
+               <configuration>
+                   <skipTests>true</skipTests>
+               </configuration>
+           </plugin>
+           <plugin>
+               <groupId>net.alchim31.maven</groupId>
+               <artifactId>scala-maven-plugin</artifactId>
+               <version>3.3.3</version>
+               <executions>
+                   <execution>
+                       <?m2e execute onConfiguration?>
+                       <goals>
+                           <goal>compile</goal>
+                           <goal>testCompile</goal>
+                       </goals>
+                   </execution>
+               </executions>
+             <configuration>
+                 <scalaVersion>2.13.13</scalaVersion>
+               </configuration>
+           </plugin>
+           <plugin>
+               <groupId>org.scalatest</groupId>
+               <artifactId>scalatest-maven-plugin</artifactId>
+               <version>2.2.0</version>
+               <configuration>
+                   <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                   <junitxml>.</junitxml>
+                   <filereports>WDF TestSuite.txt</filereports>
+               </configuration>
+               <executions>
+                   <execution>
+                       <id>test</id>
+                       <goals>
+                           <goal>test</goal>
+                       </goals>
+                   </execution>
+               </executions>
+           </plugin>
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-shade-plugin</artifactId>
+               <version>3.6.0</version>
+               <executions>
+                   <!-- Run shade goal on package phase -->
+                   <execution>
+                       <phase>package</phase>
+                       <goals>
+                           <goal>shade</goal>
+                       </goals>
+                       <configuration>
+                           <createDependencyReducedPom>false</createDependencyReducedPom>
+                           <filters>
+                               <filter>
+                                   <artifact>*:*</artifact>
+                                   <excludes>
+                                       <exclude>META-INF/*.SF</exclude>
+                                       <exclude>META-INF/*.DSA</exclude>
+                                       <exclude>META-INF/*.RSA</exclude>
+                                   </excludes>
+                               </filter>
+                           </filters>
+                           <finalName>GatlingTest-4.0.0</finalName>
+                           <relocations>
+                               <relocation>
+                                   <pattern>com.google.protobuf</pattern>
+                                   <shadedPattern>shaded.com.google.protobuf</shadedPattern>
+                               </relocation>
+                               <relocation>
+                                   <pattern>com.google.common</pattern>
+                                   <shadedPattern>shaded.com.google.common</shadedPattern>
+                               </relocation>
+                           </relocations>
+                       </configuration>
+                   </execution>
+               </executions>
+           </plugin>
+           <plugin>
+     <groupId>io.gatling</groupId>
+     <artifactId>gatling-maven-plugin</artifactId>
+     <version>4.19.0</version>
+     <configuration>
+         <simulationsFolder>src/test/java/ConduitApp/performance</simulationsFolder>
+       <configFolder>src/test/java/ConduitApp/performance/data</configFolder>
+     </configuration>              
+ </plugin>
+       </plugins>
+   </build>
+  
+</project>
+
