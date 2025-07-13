@@ -21,6 +21,12 @@
    <artifactId>karate-gatling</artifactId>
    <version>1.4.1</version>
 </dependency>
+           <!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
+<dependency>
+    <groupId>org.scala-lang</groupId>
+    <artifactId>scala3-library_3</artifactId>
+    <version>3.7.0</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/io.gatling/gatling-http -->
 <dependency>
     <groupId>io.gatling</groupId>
