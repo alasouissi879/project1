@@ -16,6 +16,14 @@
     </profile>
 	</profiles>
    <dependencies>
+	   <dependency>
+    <groupId>org.scalatest</groupId>
+    <artifactId>scalatest_2.13</artifactId>
+    <version>3.2.10</version> <!-- Use a compatible version -->
+    <scope>test</scope>
+</dependency>
+
+	   
    <dependency>
    <groupId>com.intuit.karate</groupId>
    <artifactId>karate-gatling</artifactId>
