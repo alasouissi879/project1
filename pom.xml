@@ -16,6 +16,11 @@
     </profile>
 	</profiles>
    <dependencies>
+	    <dependency>
+        <groupId>io.gatling</groupId>
+        <artifactId>gatling-compiler</artifactId>
+        <version>3.10.5</version>
+    </dependency>
 	   <dependency>
     <groupId>org.scalatest</groupId>
     <artifactId>scalatest_2.13</artifactId>
@@ -250,7 +255,7 @@
            <plugin>
      <groupId>io.gatling</groupId>
      <artifactId>gatling-maven-plugin</artifactId>
-     <version>4.19.0</version>
+     <version>3.9.0</version>
      <configuration>
          <simulationsFolder>src/test/java/ConduitApp/performance</simulationsFolder>
        <configFolder>src/test/java/ConduitApp/performance/data</configFolder>
