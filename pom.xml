@@ -89,7 +89,7 @@
 <dependency>
     <groupId>net.alchim31.maven</groupId>
     <artifactId>scala-maven-plugin</artifactId>
-    <version>3.3.3</version>
+    <version>4.5.4</version>
 </dependency>
        <dependency>
            <groupId>org.apache.logging.log4j</groupId>
@@ -182,7 +182,7 @@
            <plugin>
                <groupId>net.alchim31.maven</groupId>
                <artifactId>scala-maven-plugin</artifactId>
-               <version>3.3.3</version>
+               <version>4.5.4</version>
                <executions>
                    <execution>
                        <?m2e execute onConfiguration?>
@@ -255,7 +255,7 @@
            <plugin>
      <groupId>io.gatling</groupId>
      <artifactId>gatling-maven-plugin</artifactId>
-     <version>3.9.0</version>
+     <version>4.19.1</version>
      <configuration>
          <simulationsFolder>src/test/java/ConduitApp/performance</simulationsFolder>
        <configFolder>src/test/java/ConduitApp/performance/data</configFolder>
